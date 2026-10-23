@@ -26,7 +26,7 @@ set "STAMP=%TEMP%\NightNightVersion.cs"
 >>"%STAMP%" echo [assembly: AssemblyFileVersion("%VERSION%")]
 
 if not exist "%BUILD%" mkdir "%BUILD%"
-"%CSC%" /nologo /target:winexe /optimize+ /win32icon:"%CODE%\icon-injector\nn_appicon.ico" /out:"%BUILD%\Night-Night.exe" "%CODE%\NightNight.cs" "%CODE%\UpdateCheck.cs" "%STAMP%"
+"%CSC%" /nologo /target:winexe /optimize+ /win32icon:"%CODE%\appicon.ico" /out:"%BUILD%\Night-Night.exe" "%CODE%\NightNight.cs" "%CODE%\UpdateCheck.cs" "%STAMP%"
 set "RC=%ERRORLEVEL%"
 del "%STAMP%" >nul 2>nul
 exit /b %RC%

@@ -15,7 +15,7 @@ Windows only, nothing to install: it is compiled with the C# compiler that comes
 version stamped in; by hand:
 
 ```bat
-%WINDIR%\Microsoft.NET\Framework64\v4.0.30319\csc.exe /target:winexe /win32icon:icon-injector\nn_appicon.ico /out:Night-Night.exe NightNight.cs UpdateCheck.cs
+%WINDIR%\Microsoft.NET\Framework64\v4.0.30319\csc.exe /target:winexe /win32icon:appicon.ico /out:Night-Night.exe NightNight.cs UpdateCheck.cs
 ```
 
 ## More
